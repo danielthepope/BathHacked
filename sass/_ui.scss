@@ -1,5 +1,10 @@
+%wrapper{
+	max-width: rem(1050px);
+	margin-left: auto;
+	margin-right: auto;
+}
+
 body {
-	@extend %flex;
 }
 
 /*UI components*/
@@ -19,8 +24,8 @@ body {
 
 %menu-icon {
 	@extend %icon;
-	height: 48px;
-	width: 48px;
+	height: rem(48px);
+	width: rem(48px);
 	display: inline-block;
 	background-image: url(img/ui/menu.png);
 	.svg & {
@@ -37,28 +42,21 @@ body {
 	text-transform: uppercase;
 	line-height: 100%;
 	padding: 0.5em;
-	
 }
 
 %btn--fancy {
 	@extend %btn;
 	color: $secondary-brand;
-	border: $secondary-brand 3px solid;
+	border: $secondary-brand rem(3px) solid;
 	transition: all 0.6s ease-in-out;
 	&:hover {
 		color: $tertiary-brand;
-		border: $tertiary-brand 3px solid
+		border: $tertiary-brand rem(3px) solid
 	}
 }
 
-.wrapper, %wrapper{
-	max-width: 1050px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.content-wrapper, %content-wrapper {
-	max-width: 710px;
+%content-wrapper {
+	max-width: rem(960px);
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -76,14 +74,22 @@ textarea {
 input[type="text"] {
 	display: block;
 	background: grey;
-	height: 30px;
-	width: 280px;
+	height: rem(30px);
+	width: rem(280px);
 	border: 0;
 }
 
 // Header area
 .global_nav {
 	// padding: 20px 0;
+}
+
+.header {
+	background: $brand;
+	&__container {
+		@extend %wrapper;
+		padding: rem(20px) 0;
+	}
 }
 
 .logo {
@@ -184,4 +190,65 @@ input[type="text"] {
 
 #map-canvas {
 	height: 200px; margin: 0; padding: 0;
+}
+
+// Profile styles
+.profile {
+	@extend %content-wrapper;
+	&__header {
+		@extend %align-center;
+		&__title {
+
+		}
+		&__img {
+		}
+	}
+	&__details {
+		&__item {
+			&__label {
+
+			}
+			&__bd {
+				&--listing {
+					&__item {
+
+					}
+				}
+			}
+		}
+	}
+}
+.listing {
+	@extend %content-wrapper;
+	@extend %flex;
+	@extend %flex-column;
+	@extend %flex-wrap;
+	@extend %justify-between;
+	margin: rem(30px) auto;
+	&__item {
+		list-style: none;
+		&__img {
+
+		}
+		&__header {
+			padding: rem(10px);
+		}
+		&__meta {
+			&--con {
+				background: blue;
+			}
+			&--lib-dem {
+				background: yellow;
+			}
+			&--lab {
+				background: red;
+			}
+			&--green {
+				background: green;
+			}
+			&--ukip {
+				background: purple;
+			}
+		}
+	}
 }

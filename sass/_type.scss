@@ -4,11 +4,11 @@ body {
 }
 
 %body-font-family {
-	font-family: 'CRUCIAL_UPDATE', sans-serif;
+	font-family: 'Georgia', serif;
 }
 
 %header-font-family {
-	font-family: 'CRUCIAL_UPDATE', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	font-weight: 700;
 }
 
@@ -26,7 +26,7 @@ h1, h2 ,h3, h4, h5, h6 {
 }
 
 %heading-1-size {
-	font-size: rem(70px);
+	font-size: rem(45px);
 }
 
 h1, %heading-1, .heading-1 {
@@ -82,7 +82,7 @@ p {
 }
 
 %small {
-	font-size: rem(12px, 0.75);
+	font-size: rem(12px);
 }
 
 %mega-small {

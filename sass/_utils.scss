@@ -13,6 +13,17 @@
     @return ($px / $base) * 1rem;
 }
 
+%align-left {
+	text-align: left;
+}
+
+%align-right {
+	text-align: right;
+}
+
+%align-center {
+	text-align: center;
+}
 
 // Common display options
 %inline {
@@ -29,6 +40,30 @@
 
 %flex {
 	display: flex;
+}
+
+%justify-between {
+	justify-content: space-between;
+}
+
+%justify-around {
+	justify-content: space-between;
+}
+
+%flex-column {
+ flex-direction: column;
+}
+
+%flex-row {
+ flex-direction: row;
+}
+
+%flex-wrap {
+	flex-wrap: wrap;
+}
+
+%flex-nowrap {
+	flex-wrap: nowrap;
 }
 
 // Common heights

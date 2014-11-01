@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div id="content">
+<div class="content">
 	<?php
 		if(isset($_GET['author_name'])) :
 			$curauth = get_userdatabylogin($author_name);
