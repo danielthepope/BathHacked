@@ -1,0 +1,1 @@
+function initialize(){var a=new google.maps.LatLng(51.38,-2.36),e={zoom:6,center:a},t=new google.maps.Map(document.getElementById("map-canvas"),e),n=new google.maps.KmlLayer({url:"https://data.bathhacked.org/download/czyv-tngt/KMZ"});n.setMap(t)}

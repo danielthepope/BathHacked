@@ -1,0 +1,127 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+// Font size functions
+// px to em converter 		
+@function em($px, $base: $base-font-size) {
+    @return ($px / $base) * 1em;
+}
+
+// px to rem convertor
+@function rem($px, $base: $base-font-size) {
+    @return ($px / $base) * 1rem;
+}
+
+
+// Common display options
+%inline {
+	display: inline;
+}
+
+%inline-block {
+	display: inline-block;
+}
+
+%block {
+	display: block;
+}
+
+%flex {
+	display: flex;
+}
+
+// Common heights
+%full-height {
+	height: $full-height;
+}
+
+%full-width {
+	width: $full-width;
+}
+
+
+%full-height-width {
+	height: $full-height;
+	width: $full-width;
+}
+
+// @mixin spacing-placeholder ($property) {
+// 	$spacing-value-map: (
+// 		"half" $half-spacing-unit,
+// 		"small" $small-spacing-unit,
+// 		"quarter" $quarter-spacing-unit,
+// 		"three-quarter" $three-quarter-spacing-unit,
+// 		"default" $base-spacing-unit,
+// 		"larger" $larger-spacing-unit,
+// 		"xlarger" $xlarger-spacing-unit,
+// 		"mega" $mega-spacing-unit,
+// 		"giga" $giga-spacing-unit
+// 	);
+// 	@each $name, $value in $spacing-value-map {
+// 		$safeName: unquote($name);
+// 		%#{$safeName}-#{$property} {
+// 			#{$property}: $value;
+// 			#{$property}: rem($value);
+// 		}
+// 		%#{$safeName}-#{$property}-top {
+// 			#{$property}-top: $value;
+// 			#{$property}-top: rem($value);
+// 		}
+// 		%#{$safeName}-#{$property}-right {
+// 			#{$property}-right: $value;
+// 			#{$property}-right: rem($value);
+// 		}
+// 		%#{$safeName}-#{$property}-bottom {
+// 			#{$property}-bottom: $value;
+// 			#{$property}-bottom: rem($value);
+// 		}
+// 		%#{$safeName}-#{$property}-left {
+// 			#{$property}-left: $value;
+// 			#{$property}-left: rem($value);
+// 		}
+// 	}
+// }
+
+// @include spacing-placeholder(margin);
+// @include spacing-placeholder(padding);
+
+%border-radius-small {
+	border-radius: 5px;
+	border-radius: rem(5px);
+}
+
+%default-transition {
+	transition: all 0.5s ease-in-out;
+}
+
+// Positions
+%position-absolute {
+	position: absolute;
+}
+
+%position-relative {
+	position: relative;
+}
+
+%position-static {
+	position: static;
+}
+
+%position-fixed {
+	position: fixed;
+}
+
+// Resets
+%list-reset {
+    list-style: none;
+}
+
+%decoration-none {
+	text-decoration: none;
+}
+
+// Transitions
+%default-transition {
+	transition: 0.75s all ease-in-out;
+}

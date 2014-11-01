@@ -1,0 +1,16 @@
+{
+  "name": "orchard-city-spa",
+  "version": "0.1.0",
+  "devDependencies": {
+    "gulp": "~3.8.5",
+    "gulp-compass": "~1.1.9",
+    "gulp-watch": "^0.6.7",
+    "gulp-load-plugins": "~0.5.3",
+    "gulp-uglify": "~0.3.1",
+    "gulp-concat": "~2.2.0",
+    "gulp-sass": "~1.1.0",
+    "gulp-sourcemaps": "~1.2.4",
+    "gulp-autoprefixer": "~1.0.1",
+    "sass-list-maps": "~1.0.0-b"
+  }
+}

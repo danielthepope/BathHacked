@@ -1,0 +1,35 @@
+$base-font-size: 16px;
+$smaller-font-size: 14px;
+
+$page_background: #f5f2ed;
+$base_grey: #333333;
+$darker_grey: #828282;
+$bg-grey: #ebebeb;
+
+$break-med: 40em;
+$break-large: 60em;
+
+$brand: #33353a; //Dark grey
+$secondary-brand: #c7a071; // Gold
+$tertiary-brand: #751e3d; // Purple
+
+// ************************************************************************* //
+// ************************************************************************* //
+// **************************** Spacing & measurements ********************* //
+// ************************************************************************* //
+// ************************************************************************* //
+// These are being used primarily in placeholders in _ui.scss
+$quarter-spacing-unit: 10px;
+$small-spacing-unit: 15px;
+$half-spacing-unit: 20px;
+$three-quarter-spacing-unit: 30px;
+$base-spacing-unit: 40px;
+$larger-spacing-unit: 50px;
+$xlarger-spacing-unit: 60px;
+$mega-spacing-unit: 60px;
+$giga-spacing-unit: 60px;
+
+$full-height: 100%;
+$full-width: 100%;
+
+// Custom widths aka magic numbers

@@ -60,19 +60,19 @@ function custom_content_types() {
         'capabilities' => array(),
         'exclude_from_search' => true,
         'labels' => array(
-            'name' => __( 'Candiates', 'textdomain' ),
-            'singular_name' => __( 'Candiate', 'textdomain' ),
-            'add_new' => __( 'Add New Candiate', 'textdomain' ),
-            'add_new_item' => __( 'Add New Candiate', 'textdomain' ),
-            'edit_item' => __( 'Edit Candiate', 'textdomain' ),
-            'new_item' => __( 'New Candiate', 'textdomain' ),
-            'all_items' => __( 'All Candiates', 'textdomain' ),
-            'view_item' => __( 'View Candiate', 'textdomain' ),
-            'search_items' => __( 'Search Candiates', 'textdomain' ),
-            'not_found' =>  __( 'No Candiates found', 'textdomain' ),
-            'not_found_in_trash' => __( 'No Candiates found in Trash', 'textdomain' ),
+            'name' => __( 'Candidates', 'textdomain' ),
+            'singular_name' => __( 'Candidate', 'textdomain' ),
+            'add_new' => __( 'Add New Candidate', 'textdomain' ),
+            'add_new_item' => __( 'Add New Candidate', 'textdomain' ),
+            'edit_item' => __( 'Edit Candidate', 'textdomain' ),
+            'new_item' => __( 'New Candidate', 'textdomain' ),
+            'all_items' => __( 'All Candidates', 'textdomain' ),
+            'view_item' => __( 'View Candidate', 'textdomain' ),
+            'search_items' => __( 'Search Candidates', 'textdomain' ),
+            'not_found' =>  __( 'No Candidates found', 'textdomain' ),
+            'not_found_in_trash' => __( 'No Candidates found in Trash', 'textdomain' ),
             'parent_item_colon' => '',
-            'menu_name' => 'Candiates'
+            'menu_name' => 'Candidates'
         )
     ) );
 
