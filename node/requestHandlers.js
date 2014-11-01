@@ -1,5 +1,6 @@
 var exec = require("child_process").exec;
 var fs = require("fs");
+var http = require("http");
 
 function start(query, response) {
 	console.log("Request handler for start was called");
@@ -41,9 +42,26 @@ function chart(query, response) {
 
 function localelectionresults(query, response) {
 	console.log(query);
-	response.writeHead(200, {"Content-Type": "text/json"});
-	response.write('[{ "constituency": "Bath", "ward": "Bathwick", "name": "Peter Marsh", "party": "Labour Party", "votes": 153 }, { "constituency": "Bath", "ward": "Bathwick", "name": "Jenny Rust", "party": "Green Party", "votes": 124 }]');
-	response.end();
+
+	var url = 'http://data.bathhacked.org/resource/ce47-a7ku.json?' + query;
+
+	http.get(url, function(res) {
+		var body = '';
+
+		res.on('data', function(chunk) {
+			body += chunk;
+		});
+
+		res.on('end', function() {
+			console.log("Got response: ", body);
+
+			response.writeHead(200, {"Content-Type": "text/json"});
+			response.write(body);
+			response.end();
+		});
+	}).on('error', function(e) {
+		  console.log("Got error: ", e);
+	});
 }
 
 exports.start = start;
