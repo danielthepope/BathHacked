@@ -86,10 +86,15 @@ input[type="text"] {
 }
 
 .header {
-	background: $secondary-brand;
+	background: url("img/bath.jpg") no-repeat;
+	background-size: cover;
+	min-height: 300px;
 	&__container {
 		@extend %wrapper;
 		padding: rem(20px) 0;
+	}
+	&__title {
+		color: white;
 	}
 }
 
@@ -257,16 +262,6 @@ input[type="text"] {
 			}
 		}
 	}
-}
-
-#chart1 {
-	width: 600px!important;
-	height: 600px!important;
-}
-
-#turnoutChart {
-	width: 50px!important;
-	height: 200px!important;
 }
 
 .wardButton {

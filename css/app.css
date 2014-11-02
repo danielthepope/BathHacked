@@ -223,9 +223,13 @@ input[type="text"] {
   border: 0; }
 
 .header {
-  background: #E9622C; }
+  background: url("img/bath.jpg") no-repeat;
+  background-size: cover;
+  min-height: 300px; }
   .header__container {
     padding: 1.25rem 0; }
+  .header__title {
+    color: white; }
 
 .logo {
   background: black;
@@ -293,14 +297,6 @@ input[type="text"] {
       background: green; }
     .listing__item__meta--ukip {
       background: purple; }
-
-#chart1 {
-  width: 600px !important;
-  height: 600px !important; }
-
-#turnoutChart {
-  width: 50px !important;
-  height: 200px !important; }
 
 .wardButton {
   margin-bottom: 20px; }
