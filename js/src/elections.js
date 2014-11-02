@@ -101,7 +101,10 @@ var turnoutOptions = {
 	showScale: false
 };
 
-var ctx = document.getElementById("chart1").getContext("2d");
-var myNewChart = new Chart(ctx).PolarArea(data);
-var turnoutContext = document.getElementById("turnoutChart").getContext("2d");
-var turnoutChart = new Chart(turnoutContext).Bar(turnoutData, turnoutOptions);
+var ctxContainer = document.getElementById("chart1");
+if (ctxContainer) {
+	var ctx = ctxContainer.getContext("2d");
+	var myNewChart = new Chart(ctx).PolarArea(data);
+	var turnoutContext = document.getElementById("turnoutChart").getContext("2d");
+	var turnoutChart = new Chart(turnoutContext).Bar(turnoutData, turnoutOptions);
+}

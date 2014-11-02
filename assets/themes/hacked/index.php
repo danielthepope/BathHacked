@@ -15,7 +15,7 @@ get_header(); ?>
 				<a href="ward/" class="listing__item--fancy__link">What happened last time?</a>
 			</li>
 			<li class="listing__item listing__item--fancy">
-				<a href="ward/" class="listing__item--fancy__link">How will you vote next time?</a>
+				<a href="predictions/" class="listing__item--fancy__link">How will you vote next time?</a>
 			</li>
 		</ul>
 	</div><!--#content-->
