@@ -1,24 +1,5 @@
-var exec = require("child_process").exec;
 var fs = require("fs");
 var http = require("http");
-
-function start(query, response) {
-	console.log("Request handler for start was called");
-	var content = "empty";
-
-	exec("dir", function(error, stdout, stderr) {
-		response.writeHead(200, {"Content-Type": "text/plain"});
-		response.write(stdout);
-		response.end();
-	});
-}
-
-function upload(query, response) {
-	console.log("Request handler for upload was called");
-	response.writeHead(200, {"Content-Type": "text/plain"});
-	response.write("Hello upload");
-	response.end();
-}
 
 function chart(query, response) {
 	console.log("Loading chart.html");
@@ -64,7 +45,5 @@ function localelectionresults(query, response) {
 	});
 }
 
-exports.start = start;
-exports.upload = upload;
 exports.chart = chart;
 exports.localelectionresults = localelectionresults;
