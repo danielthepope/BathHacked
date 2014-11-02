@@ -45,5 +45,29 @@ function localelectionresults(query, response) {
 	});
 }
 
+function turnout(query, response) {
+	console.log('Getting turnout for ' + query);
+
+	var url = 'http://data.bathhacked.org/resource/m4j8-2iqf.json?$select=turnout_percentage&' + query;
+	http.get(url, function(res) {
+		var body = '';
+
+		res.on('data', function(chunk) {
+			body += chunk;
+		});
+
+		res.on('end', function() {
+			console.log("Got response: ", body);
+
+			response.writeHead(200, {"Content-Type": "text/json"});
+			response.write(body);
+			response.end();
+		});
+	}).on('error', function(e) {
+		  console.log("Got error: ", e);
+	});
+}
+
 exports.chart = chart;
 exports.localelectionresults = localelectionresults;
+exports.turnout = turnout;
