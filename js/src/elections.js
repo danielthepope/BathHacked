@@ -51,7 +51,8 @@ function reloadTurnoutChart() {
 }
 
 $('.wardButton').on('click', function() {
-	console.log('Clicked ward button ' + $(this).text());
+	var wardName = $(this).text();
+	console.log('Clicked ward button ' + wardName);
 	var result = [];
 	$.ajax({
 		"url":"http://data.bathhacked.org/resource/ce47-a7ku.json?$where=year=2011%20AND%20ward=%27" + $(this).text() + "%27",
@@ -60,6 +61,7 @@ $('.wardButton').on('click', function() {
 		"success": function(data) {
 			// console.log('Data is '+data);
 			candidates = data;
+			$('#wardLabel').text(wardName);
 			refresh(toData(candidates));
 			// console.log('refreshed');
 		},
@@ -73,7 +75,9 @@ $('.wardButton').on('click', function() {
 		"dataType":"json",
 		"success": function(data) {
 			console.log('success');
-			turnoutData.datasets[0].data[0] = data[0].turnout_percentage;
+			var percentage = data[0].turnout_percentage;
+			$('#turnoutLabel').text(percentage + '% turnout');
+			turnoutData.datasets[0].data[0] = percentage;
 			reloadTurnoutChart();
 			console.log('refreshed');
 		},
