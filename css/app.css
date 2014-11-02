@@ -236,7 +236,7 @@ input[type="text"] {
   background: black;
   padding: 30px; }
 
-.menu-item:first-child a {
+.menu-item.current_page_item a {
   color: #E9622C; }
 .menu-item a {
   color: white; }
@@ -261,9 +261,11 @@ input[type="text"] {
           transform: translateX(0); }
 
 #map-canvas {
-  height: 200px;
+  height: 1500px;
   margin: 0;
   padding: 0; }
+  #map-canvas img {
+    max-width: none; }
 
 .listing {
   margin: 1.875rem auto; }

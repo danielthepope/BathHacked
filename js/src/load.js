@@ -6,7 +6,6 @@ function loadScript() {
 		document.body.appendChild(script);
 	}
 	loadMaps();
-	console.log("Loaded");
 }
 
 window.onload = loadScript;
