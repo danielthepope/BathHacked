@@ -61,7 +61,10 @@ var predictionData2 = [ {
 }
  ];
 
-var predictionContext = document.getElementById("predictionChart").getContext("2d");
-var predictionChart = new Chart(predictionContext).PolarArea(toData(predictionData1));
-var idealContext = document.getElementById("idealChart").getContext("2d");
-var idealChart = new Chart(idealContext).PolarArea(toData(predictionData2));
+var predictionContainer = document.getElementById("predictionChart");
+if(predictionContainer) {
+  var predictionContext = predictionContainer.getContext("2d");
+  var predictionChart = new Chart(predictionContext).PolarArea(toData(predictionData1));
+  var idealContext = document.getElementById("idealChart").getContext("2d");
+  var idealChart = new Chart(idealContext).PolarArea(toData(predictionData2));
+}
