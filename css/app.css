@@ -174,7 +174,7 @@ p {
   p:first-child {
     margin: 0 0 1em 0; }
 
-.btn, .btn--menu {
+.wardButton, .btn, .btn--menu {
   font-size: 0.625rem; }
 
 .header__container {
@@ -186,13 +186,23 @@ p {
 .btn--menu, .closer {
   text-indent: -9999px; }
 
-.btn, .btn--menu {
+.wardButton, .btn, .btn--menu {
   display: inline-block;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   line-height: 100%;
   padding: 0.5em; }
+
+.wardButton {
+  background-color: #E9622C;
+  color: white;
+  border: #E9622C 0.1875rem solid;
+  -webkit-transition: all 0.6s ease-in-out;
+          transition: all 0.6s ease-in-out; }
+  .wardButton:hover {
+    background: #751e3d;
+    border: #751e3d 0.1875rem solid; }
 
 .profile, .listing {
   max-width: 60rem;
@@ -213,7 +223,7 @@ input[type="text"] {
   border: 0; }
 
 .header {
-  background: #EAB500; }
+  background: #E9622C; }
   .header__container {
     padding: 1.25rem 0; }
 
@@ -283,6 +293,17 @@ input[type="text"] {
       background: green; }
     .listing__item__meta--ukip {
       background: purple; }
+
+#chart1 {
+  width: 600px !important;
+  height: 600px !important; }
+
+#turnoutChart {
+  width: 50px !important;
+  height: 200px !important; }
+
+.wardButton {
+  margin-bottom: 20px; }
 
 @media screen and (min-width: 40em) {
   .listing {

@@ -46,11 +46,12 @@ body {
 
 %btn--fancy {
 	@extend %btn;
-	color: $secondary-brand;
+	background-color: $secondary-brand;
+	color: white;
 	border: $secondary-brand rem(3px) solid;
 	transition: all 0.6s ease-in-out;
 	&:hover {
-		color: $tertiary-brand;
+		background: $tertiary-brand;
 		border: $tertiary-brand rem(3px) solid
 	}
 }
@@ -85,7 +86,7 @@ input[type="text"] {
 }
 
 .header {
-	background: $brand;
+	background: $secondary-brand;
 	&__container {
 		@extend %wrapper;
 		padding: rem(20px) 0;
@@ -256,4 +257,19 @@ input[type="text"] {
 			}
 		}
 	}
+}
+
+#chart1 {
+	width: 600px!important;
+	height: 600px!important;
+}
+
+#turnoutChart {
+	width: 50px!important;
+	height: 200px!important;
+}
+
+.wardButton {
+	@extend %btn--fancy;
+	margin-bottom: 20px;
 }
