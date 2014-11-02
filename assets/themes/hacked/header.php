@@ -22,10 +22,6 @@
 					<?php bloginfo('name'); ?>
 				</h3>
 			</div><!--#title-->
-			<div id="nav-primary" class="nav"><nav>
-				<?php
-				     wp_nav_menu( array( 'menu' => 'header-menu' ) ); ?>
-			</nav></div><!--#nav-primary-->
 		</div><!--.container-->
 	</div><!--#header-->
 	<div class="container">

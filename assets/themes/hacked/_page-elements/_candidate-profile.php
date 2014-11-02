@@ -10,6 +10,24 @@ $candidate_date_of_birth = get_field('candidate_date_of_birth');
 $candidate_email = get_field('candidate_email');
 $candidate_twitter_handle = get_field('candidate_twitter_handle');
 $candidate_website = get_field('candidate_website');
+
+switch($candidate_party){
+case"green":
+	$party_name = "Green Party";
+break;
+case"lab":
+	$party_name = "Labour Party";
+break;
+case"con":
+	$party_name = "Conservative Party";
+break;
+case"ukip":
+	$party_name = "UKIP";
+break;
+case"lib-dem":
+	$party_name = "Liberal Democrats";
+break;
+}
 ?>
 <div class="profile">
 	<div class="profile__header">
@@ -22,7 +40,7 @@ $candidate_website = get_field('candidate_website');
 		<div class="profile__details__item">
 			<h3 class="profile__details__item__label">Party</h3>
 			<span class="profile__details__item__bd">
-				<?php echo $candidate_party; ?>
+				<?php echo $party_name; ?>
 			</span>
 		</div>
 		<?php if ($candidate_date_of_birth): ?>

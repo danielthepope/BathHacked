@@ -6,6 +6,24 @@
 	$candidate_name = get_field('candidate_name');
 	$candidate_profile_picture = get_field('candidate_profile_picture');
 	$candidate_party = get_field('candidate_party');
+
+	switch($candidate_party){
+	case"green":
+		$party_name = "Green Party";
+	break;
+	case"lab":
+		$party_name = "Labour Party";
+	break;
+	case"con":
+		$party_name = "Conservative Party";
+	break;
+	case"ukip":
+		$party_name = "UKIP";
+	break;
+	case"lib-dem":
+		$party_name = "Liberal Democrats";
+	break;
+	}
 ?>
 	<li class="listing__item listing__item">
 		<img src="<?php echo $candidate_profile_picture['url'] ?>" alt="" class="listing__item__img listing__item__img--<?php echo $candidate_party ?>">
@@ -15,7 +33,7 @@
 			</a>
 		</h2>
 		<p class="listing__item__meta">
-			<?php echo $candidate_party; ?>
+			<?php echo $party_name; ?>
 		</p>
 	</li>
 <?php endwhile; /* end loop */ ?>

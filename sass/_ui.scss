@@ -4,6 +4,10 @@
 	margin-right: auto;
 }
 
+.content {
+	padding-bottom: 40px;
+}
+
 body {
 }
 
@@ -287,6 +291,7 @@ input[type="text"] {
 		&--fancy {
 			&__link {
 				@extend %btn--fancy;
+				font-size: 16px;
 			}
 		}
 	}	
@@ -294,5 +299,6 @@ input[type="text"] {
 
 .wardButton {
 @extend %btn--fancy;
+font-size: 16px;
 margin-bottom: 20px;
 }
