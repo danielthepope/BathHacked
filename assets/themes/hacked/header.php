@@ -19,7 +19,7 @@
 		<div class="header__container">
 			<div class="title">
 				<h3 class="header__title">
-					<?php bloginfo('name'); ?>
+					VoteTub
 				</h3>
 			</div><!--#title-->
 		</div><!--.container-->

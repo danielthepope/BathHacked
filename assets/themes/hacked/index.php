@@ -5,7 +5,7 @@ Template Name: Home/landing page template
 get_header(); ?>
 	<div class="content">
 		<div class="listing">
-			<h1>VoteTub!</h1>
+			<h1>Your one-stop shop for All The Political Things</h1>
 		</div>
 		<ul class="listing">
 			<li class="listing__item listing__item--fancy">
