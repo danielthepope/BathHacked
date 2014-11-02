@@ -1,0 +1,1 @@
+function loadScript(){var a=function(){var a=document.createElement("script");a.type="text/javascript",a.src="https://maps.googleapis.com/maps/api/js?v=3.exp&callback=initialize",document.body.appendChild(a)};a()}window.onload=loadScript;

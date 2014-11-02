@@ -1,42 +1,34 @@
 function initialize() {
 	var bath = new google.maps.LatLng(51.3800, -2.3600);
-	var mapOptions = {
-		zoom: 1,
-		center: bath,
-		var styleArray = [{
-		featureType: "administrativeArea",
-		stylers: [
-			{ saturation: -80 }
-		]}
-	}
-	var map = new google.maps.Map(document.getElementById('map-canvas'),
-		mapOptions);
+	// Create an array of styles.
+	  var styles = [{
+	      featureType: "administrative.locality",
+	      stylers: [
+	      	{ hue: "#00ffe6" },
+	        { lightness: 100 },
+	        { visibility: "simplified" }
+	      ]
+	    }
+	  ];
 
-	// var ctaLayer = new google.maps.KmlLayer({
-	// 	url: 'https://data.bathhacked.org/download/czyv-tngt/KMZ',
-	// 	suppressInfoWindows: true
-	// });
-	// ctaLayer.setMap(map);
+	  // Create a new StyledMapType object, passing it the array of styles,
+	  // as well as the name to be displayed on the map type control.
+	  var styledMap = new google.maps.StyledMapType(styles,
+	    {name: "Styled Map"});
 
-	// // Track any open info windows so we can track them
-	// var openInfoWindows = {};
+	  // Create a map object, and include the MapTypeId to add
+	  // to the map type control.
+	  var mapOptions = {
+	    zoom: 12,
+	    center: bath,
+	    mapTypeControlOptions: {
+	      mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+	    }
+	  };
+	  var map = new google.maps.Map(document.getElementById('map-canvas'),
+	    mapOptions);
 
-	// google.maps.event.addListener(ctaLayer, 'click', function(kmlEvent) {
-	// 	showInContentWindow(kmlEvent.latLng, kmlEvent.featureData.description);
-	// });
-
-	// var showInContentWindow = function(position, text) {
-	// 	var re = /(?=NAME)/gi;
-	// 	var match = re.exec(text);
-	// 	console.log(match);  // prints "First"
-	// 	var content = "<div>" + text +  "</div>";
-	// 	if(openInfoWindows.openInfoWindow)
-	// 		openInfoWindows.openInfoWindow.close();
-	// 	var infowindow = new google.maps.InfoWindow({
-	// 		content: content, 
-	// 		position: position
-	// 	})
-	// 	openInfoWindows.openInfoWindow = infowindow;
-	// 	infowindow.open(map);
-	// }
+	  //Associate the styled map with the MapTypeId and set it to display.
+	  map.mapTypes.set('map_style', styledMap);
+	  map.setMapTypeId('map_style');
 }
