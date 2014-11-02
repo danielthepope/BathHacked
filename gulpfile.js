@@ -7,7 +7,7 @@ plugins.uglify = require('gulp-uglify');
 plugins.concat = require('gulp-concat');
 plugins.prefix = require('gulp-autoprefixer');
 
-var scriptQueue = ['js/src/chart.js', 'js/src/elections.js'];
+var scriptQueue = ['js/src/chart.js', 'js/src/elections.js', 'js/src/predictions.js'];
 
 gulp.task('sass', function() {
 	gulp.src('sass/*.scss')

@@ -1,8 +1,9 @@
-var lib = '#FFC000';
-var con = '#0070C0';
-var lab = '#FF0000';
-var green = '#008000';
+var lib = '#FDBB30';
+var con = '#0087DC';
+var lab = '#DC241f';
+var green = '#6AB023';
 var ind = '#808080';
+var ukip = '#70147A';
 var candidates = [];
 
 var turnoutData = {
@@ -35,6 +36,7 @@ function getColor(partyName) {
 	if (partyName === "Labour Party") return lab;
 	if (partyName === "Liberal Democrats") return lib;
 	if (partyName === "Green Party") return green;
+	if (partyName === "UKIP") return ukip;
 	else return ind;
 }
 function refresh(data) {
