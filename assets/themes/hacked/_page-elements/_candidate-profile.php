@@ -16,7 +16,7 @@ $candidate_website = get_field('candidate_website');
 		<h1 class="profile__header__title">
 			<?php echo $candidate_name."(".$candidate_party.")"; ?>
 		</h1>
-		<img class="profile__header__img" src="<?php echo $candidate_profile_picture['url']; ?>" alt="">
+		<img class="profile__header__img profile__header__img--<?php echo $candidate_party ?>" src="<?php echo $candidate_profile_picture['url']; ?>" alt="">
 	</div>
 	<div class="profile__details">
 		<div class="profile__details__item">

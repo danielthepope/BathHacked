@@ -79,13 +79,13 @@ input, select {
 .profile__header {
   text-align: center; }
 
-.listing {
+.profile__details, .listing {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
 
-.listing {
+.profile__details, .listing {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -174,7 +174,7 @@ p {
   p:first-child {
     margin: 0 0 1em 0; }
 
-.wardButton, .btn, .btn--menu {
+.listing__item--fancy__link, .wardButton, .btn, .btn--menu {
   font-size: 0.625rem; }
 
 .header__container {
@@ -186,7 +186,7 @@ p {
 .btn--menu, .closer {
   text-indent: -9999px; }
 
-.wardButton, .btn, .btn--menu {
+.listing__item--fancy__link, .wardButton, .btn, .btn--menu {
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -194,13 +194,13 @@ p {
   line-height: 100%;
   padding: 0.5em; }
 
-.wardButton {
+.listing__item--fancy__link, .wardButton {
   background-color: #E9622C;
   color: white;
   border: #E9622C 0.1875rem solid;
   -webkit-transition: all 0.6s ease-in-out;
           transition: all 0.6s ease-in-out; }
-  .wardButton:hover {
+  .listing__item--fancy__link:hover, .wardButton:hover {
     background: #751e3d;
     border: #751e3d 0.1875rem solid; }
 
@@ -281,22 +281,36 @@ input[type="text"] {
   #map-canvas img {
     max-width: none; }
 
+.profile__header__img--con {
+  border: 5px dashed #0087DC; }
+.profile__header__img--lib-dem {
+  border: 5px dashed #FDBB30; }
+.profile__header__img--lab {
+  border: 5px dashed #DC241f; }
+.profile__header__img--green {
+  border: 5px dashed #6AB023; }
+.profile__header__img--ukip {
+  border: 5px dashed #70147A; }
+
 .listing {
   margin: 1.875rem auto; }
   .listing__item {
-    list-style: none; }
+    list-style: none;
+    margin-bottom: 20px; }
+    .listing__item__img--con {
+      border: 5px dashed #0087DC; }
+    .listing__item__img--lib-dem {
+      border: 5px dashed #FDBB30; }
+    .listing__item__img--lab {
+      border: 5px dashed #DC241f; }
+    .listing__item__img--green {
+      border: 5px dashed #6AB023; }
+    .listing__item__img--ukip {
+      border: 5px dashed #70147A; }
     .listing__item__header {
       padding: 0.625rem; }
-    .listing__item__meta--con {
-      background: blue; }
-    .listing__item__meta--lib-dem {
-      background: yellow; }
-    .listing__item__meta--lab {
-      background: red; }
-    .listing__item__meta--green {
-      background: green; }
-    .listing__item__meta--ukip {
-      background: purple; }
+      .listing__item__header__link {
+        color: #E9622C; }
 
 .wardButton {
   margin-bottom: 20px; }

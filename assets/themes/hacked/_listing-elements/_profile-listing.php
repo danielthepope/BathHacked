@@ -7,12 +7,14 @@
 	$candidate_profile_picture = get_field('candidate_profile_picture');
 	$candidate_party = get_field('candidate_party');
 ?>
-	<li class="listing__item">
-		<img src="<?php echo $candidate_profile_picture['url'] ?>" alt="" class="listing__item__img">
+	<li class="listing__item listing__item">
+		<img src="<?php echo $candidate_profile_picture['url'] ?>" alt="" class="listing__item__img listing__item__img--<?php echo $candidate_party ?>">
 		<h2 class="listing__item__header">
-			<?php echo $candidate_name ?>
+			<a href="<?php the_permalink(); ?>" class="listing__item__header__link">
+				<?php echo $candidate_name ?>
+			</a>
 		</h2>
-		<p class="listing__item__meta listing__item__meta--<?php echo $candidate_party ?>">
+		<p class="listing__item__meta">
 			<?php echo $candidate_party; ?>
 		</p>
 	</li>

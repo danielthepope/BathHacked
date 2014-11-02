@@ -212,9 +212,26 @@ input[type="text"] {
 
 		}
 		&__img {
+			&--con {
+				border: 5px dashed #0087DC;
+			}
+			&--lib-dem {
+				border: 5px dashed #FDBB30;
+			}
+			&--lab {
+				border: 5px dashed #DC241f;
+			}
+			&--green {
+				border: 5px dashed #6AB023;
+			}
+			&--ukip {
+				border: 5px dashed #70147A;
+			}
 		}
 	}
 	&__details {
+		@extend %flex;
+		@extend %justify-between;
 		&__item {
 			&__label {
 
@@ -238,33 +255,44 @@ input[type="text"] {
 	margin: rem(30px) auto;
 	&__item {
 		list-style: none;
+		margin-bottom: 20px;
 		&__img {
-
+			&--con {
+				border: 5px dashed #0087DC;
+			}
+			&--lib-dem {
+				border: 5px dashed #FDBB30;
+			}
+			&--lab {
+				border: 5px dashed #DC241f;
+			}
+			&--green {
+				border: 5px dashed #6AB023;
+			}
+			&--ukip {
+				border: 5px dashed #70147A;
+			}
 		}
 		&__header {
 			padding: rem(10px);
+			&__link {
+				color: $secondary-brand;
+			}
 		}
 		&__meta {
-			&--con {
-				background: blue;
-			}
-			&--lib-dem {
-				background: yellow;
-			}
-			&--lab {
-				background: red;
-			}
-			&--green {
-				background: green;
-			}
-			&--ukip {
-				background: purple;
+		}
+		&__link {
+
+		}
+		&--fancy {
+			&__link {
+				@extend %btn--fancy;
 			}
 		}
-	}
+	}	
 }
 
 .wardButton {
-	@extend %btn--fancy;
-	margin-bottom: 20px;
+@extend %btn--fancy;
+margin-bottom: 20px;
 }
