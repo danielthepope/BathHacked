@@ -1,0 +1,90 @@
+
+%med-align-left {
+	text-align: left;
+}
+
+%med-align-right {
+	text-align: right;
+}
+
+%med-align-center {
+	text-align: center;
+}
+
+// Common display options
+%med-inline {
+	display: inline;
+}
+
+%med-inline-block {
+	display: inline-block;
+}
+
+%med-block {
+	display: block;
+}
+
+%med-flex {
+	display: flex;
+}
+
+%med-justify-between {
+	justify-content: space-between;
+}
+
+%med-justify-around {
+	justify-content: space-between;
+}
+
+%med-flex-column {
+ flex-direction: column;
+}
+
+%med-flex-row {
+ flex-direction: row;
+}
+
+%med-flex-wrap {
+	flex-wrap: wrap;
+}
+
+%med-flex-nowrap {
+	flex-wrap: nowrap;
+}
+
+// Common heights
+%med-full-height {
+	height: $full-height;
+}
+
+%med-full-width {
+	width: $full-width;
+}
+
+
+%med-full-height-width {
+	height: $full-height;
+	width: $full-width;
+}
+
+.listing {
+	@extend %med-flex-row;
+	&__item {
+		&__img {
+		}
+		&__header {
+		}
+		&__meta {
+			&--con {
+			}
+			&--lib-dem {
+			}
+			&--lab {
+			}
+			&--green {
+			}
+			&--ukip {
+			}
+		}
+	}
+}

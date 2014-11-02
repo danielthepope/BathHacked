@@ -4,7 +4,7 @@ Template Name: Category listing template
 */  
 get_header(); ?>
 
-<div id="content">
+<div class="content">
 	<h1><?php printf( __( 'Category Archives: %s' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
 	<?php echo category_description(); /* displays the category's description from the Wordpress admin */ ?>
 	

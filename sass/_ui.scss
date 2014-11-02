@@ -1,0 +1,275 @@
+%wrapper{
+	max-width: rem(1050px);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body {
+}
+
+/*UI components*/
+%icon {
+	display: block;
+	text-indent: -9999px;
+	background-repeat: no-repeat;
+}
+
+%ir {
+	text-indent: -9999px;
+}
+
+%icon__size {
+	background-size: contain;
+}
+
+%menu-icon {
+	@extend %icon;
+	height: rem(48px);
+	width: rem(48px);
+	display: inline-block;
+	background-image: url(img/ui/menu.png);
+	.svg & {
+		background-image: url(img/ui/menu.svg);
+		@extend %icon__size;
+	}
+}
+
+%btn {
+	@extend %mega-small;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 100%;
+	padding: 0.5em;
+}
+
+%btn--fancy {
+	@extend %btn;
+	background-color: $secondary-brand;
+	color: white;
+	border: $secondary-brand rem(3px) solid;
+	transition: all 0.6s ease-in-out;
+	&:hover {
+		background: $tertiary-brand;
+		border: $tertiary-brand rem(3px) solid
+	}
+}
+
+%content-wrapper {
+	max-width: rem(960px);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Base elements
+img {
+	max-width: 100%;
+}
+
+// Form styles
+textarea {
+	max-width: 95%;
+}
+
+input[type="text"] {
+	display: block;
+	background: grey;
+	height: rem(30px);
+	width: rem(280px);
+	border: 0;
+}
+
+// Header area
+.global_nav {
+	// padding: 20px 0;
+}
+
+.header {
+	background: $secondary-brand;
+	&__container {
+		@extend %wrapper;
+		padding: rem(20px) 0;
+	}
+}
+
+.logo {
+	background: black;
+	display: inline-block;
+	&__text {
+		@extend %heading-5;
+		margin: 0;
+		line-height: 100%;
+		text-transform: uppercase;
+	}
+	&__link {
+		color: white;
+		text-decoration: none;
+		padding: 0.5rem 1.2rem;
+	}
+}
+
+.btn {
+	@extend %btn;
+	&--menu {
+		@extend %btn;
+		@extend %ir;
+		background: $brand;
+	}
+}
+
+// Nav styles
+.navigation {
+	@extend %full-height;
+	@extend %default-transition;
+	background: black;
+	padding: $three-quarter-spacing-unit;
+}
+
+// Refactor with custom classes
+.menu-main-container {
+
+}
+
+.menu {
+	@extend %list-reset;
+	&-item {
+		&.current_page_item {
+			a {
+				color: $secondary-brand;
+			}
+		}
+		a {
+			@extend %decoration-none;
+			color: white;
+		}
+	}
+}
+
+.closer {
+	@extend %ir;
+}
+
+.share_links {
+	@extend %list-reset;
+	&__item {
+		color: white;
+		&--secondary-brand {
+
+		}
+	}
+}
+
+.link-list {
+	&__title {
+		color: $base_grey;
+	}
+	&__item {
+		color: white;
+		&__link {
+			@extend %decoration-none;
+			color: white;
+		}
+	}
+	&--reverse {
+		&__title {
+			color: white;
+		}
+		&__item {
+			&__link {
+				color: $darker_grey;
+			}
+		}
+	}
+}
+
+#navigation {
+	&:target {
+		transform: translateX(0);
+	}
+}
+
+#map-canvas {
+	height: 1500px;
+	margin: 0;
+	padding: 0;
+	img {
+		max-width: none;
+	}
+}
+
+// Profile styles
+.profile {
+	@extend %content-wrapper;
+	&__header {
+		@extend %align-center;
+		&__title {
+
+		}
+		&__img {
+		}
+	}
+	&__details {
+		&__item {
+			&__label {
+
+			}
+			&__bd {
+				&--listing {
+					&__item {
+
+					}
+				}
+			}
+		}
+	}
+}
+.listing {
+	@extend %content-wrapper;
+	@extend %flex;
+	@extend %flex-column;
+	@extend %flex-wrap;
+	@extend %justify-between;
+	margin: rem(30px) auto;
+	&__item {
+		list-style: none;
+		&__img {
+
+		}
+		&__header {
+			padding: rem(10px);
+		}
+		&__meta {
+			&--con {
+				background: blue;
+			}
+			&--lib-dem {
+				background: yellow;
+			}
+			&--lab {
+				background: red;
+			}
+			&--green {
+				background: green;
+			}
+			&--ukip {
+				background: purple;
+			}
+		}
+	}
+}
+
+#chart1 {
+	width: 600px!important;
+	height: 600px!important;
+}
+
+#turnoutChart {
+	width: 50px!important;
+	height: 200px!important;
+}
+
+.wardButton {
+	@extend %btn--fancy;
+	margin-bottom: 20px;
+}

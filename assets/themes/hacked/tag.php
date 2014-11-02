@@ -4,7 +4,7 @@ Template Name: Tag listing template
 */  
 get_header(); ?>
 <?php get_header(); ?>
-<div id="content">
+<div class="content">
 
 	<h1><?php printf( __( 'Tag Archives: %s' ), '<span>' . single_tag_title( '', false ) . '</span>' ); ?></h1>
 	<?php echo tag_description(); /* displays the tag's description from the Wordpress admin */ ?>

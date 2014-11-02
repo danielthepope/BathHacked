@@ -3,7 +3,7 @@
 Template Name: Error template
 */  
 get_header(); ?>
-<div id="content">
+<div class="content">
 	<div id="error404" class="post">
 		<h1><?php _e('Error 404 Not Found'); ?></h1>
 		<div class="post-content">

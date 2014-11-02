@@ -3,7 +3,7 @@
 Template Name: Search results template
 */  
 get_header(); ?>
-<div id="content" class="search">
+<div class="content" class="search">
 
 	<h1><?php the_search_query(); ?></h1>
 

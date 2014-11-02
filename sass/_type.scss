@@ -1,0 +1,90 @@
+body {
+	@extend %body-font-family;
+	font-size: 100%;
+}
+
+%body-font-family {
+	font-family: 'Georgia', serif;
+}
+
+%header-font-family {
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 700;
+}
+
+%bold {
+	font-weight: 700;
+}
+
+strong {
+	@extend %bold;
+}
+
+h1, h2 ,h3, h4, h5, h6 {
+	@extend %header-font-family;
+	margin: 1em 0 1em 0;
+}
+
+%heading-1-size {
+	font-size: rem(45px);
+}
+
+h1, %heading-1, .heading-1 {
+	@extend %heading-1-size;
+	margin: 0 0 0.8em 0;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+%heading-2-size {
+	font-size: rem(28px);
+}
+
+h2, %heading-2, .heading-2 {
+	@extend %heading-2-size;
+	margin: 0.9em 0 0.6em 0;
+}
+
+%heading-3-size {
+	font-size: rem(24px);
+}
+
+h3, %heading-3, .heading-3 {
+	@extend %heading-3-size;
+	margin: 0.8em 0 0.7em 0;
+}
+
+%heading-4-size {
+	font-size: rem(24px);
+}
+
+h4, %heading-4, .heading-4 {
+	@extend %heading-4-size;
+	margin: 0.8em 0 0.7em 0;
+}
+
+%heading-5-size {
+	font-size: rem(15px);
+}
+
+h5, %heading-5, .heading-5 {
+	@extend %heading-5-size;
+	margin: 0.8em 0 0.7em 0;
+}
+
+p {
+	margin: 1em 0 1em 0;
+	font-size: rem(16px);
+	// max-width: 40em;
+	&:first-child {
+		margin: 0 0 1em 0;
+	}
+}
+
+%small {
+	font-size: rem(12px);
+}
+
+%mega-small {
+	font-size: rem(10px);
+}

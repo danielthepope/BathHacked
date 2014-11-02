@@ -3,7 +3,7 @@
 Template Name: Home/landing page template
 */  
 get_header(); ?>
-	<div id="content">
+	<div class="content">
 		<?php if ( ! dynamic_sidebar( 'Alert' ) ) : ?>
 			<!--Wigitized 'Alert' for the home page -->
 		<?php endif ?>

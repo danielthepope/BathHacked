@@ -1,0 +1,316 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+.profile__header {
+  text-align: center; }
+
+.listing {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.listing {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.listing {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.listing {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.navigation {
+  height: 100%; }
+
+.navigation {
+  -webkit-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out; }
+
+.menu, .share_links {
+  list-style: none; }
+
+.menu-item a, .link-list__item__link {
+  text-decoration: none; }
+
+.navigation {
+  -webkit-transition: 0.75s all ease-in-out;
+          transition: 0.75s all ease-in-out; }
+
+body {
+  font-size: 100%; }
+
+body {
+  font-family: 'Georgia', serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 700; }
+
+strong {
+  font-weight: 700; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0 1em 0; }
+
+h1, .heading-1 {
+  font-size: 2.8125rem; }
+
+h1, .heading-1 {
+  margin: 0 0 0.8em 0;
+  text-transform: uppercase;
+  text-align: center; }
+
+h2, .heading-2 {
+  font-size: 1.75rem; }
+
+h2, .heading-2 {
+  margin: 0.9em 0 0.6em 0; }
+
+h3, .heading-3 {
+  font-size: 1.5rem; }
+
+h3, .heading-3 {
+  margin: 0.8em 0 0.7em 0; }
+
+h4, .heading-4 {
+  font-size: 1.5rem; }
+
+h4, .heading-4 {
+  margin: 0.8em 0 0.7em 0; }
+
+h5, .logo__text, .heading-5 {
+  font-size: 0.9375rem; }
+
+.logo__text {
+  margin: 0.8em 0 0.7em 0; }
+
+p {
+  margin: 1em 0 1em 0;
+  font-size: 1rem; }
+  p:first-child {
+    margin: 0 0 1em 0; }
+
+.wardButton, .btn, .btn--menu {
+  font-size: 0.625rem; }
+
+.header__container {
+  max-width: 65.625rem;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*UI components*/
+.btn--menu, .closer {
+  text-indent: -9999px; }
+
+.wardButton, .btn, .btn--menu {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 100%;
+  padding: 0.5em; }
+
+.wardButton {
+  background-color: #E9622C;
+  color: white;
+  border: #E9622C 0.1875rem solid;
+  -webkit-transition: all 0.6s ease-in-out;
+          transition: all 0.6s ease-in-out; }
+  .wardButton:hover {
+    background: #751e3d;
+    border: #751e3d 0.1875rem solid; }
+
+.profile, .listing {
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto; }
+
+img {
+  max-width: 100%; }
+
+textarea {
+  max-width: 95%; }
+
+input[type="text"] {
+  display: block;
+  background: grey;
+  height: 1.875rem;
+  width: 17.5rem;
+  border: 0; }
+
+.header {
+  background: #E9622C; }
+  .header__container {
+    padding: 1.25rem 0; }
+
+.logo {
+  background: black;
+  display: inline-block; }
+  .logo__text {
+    margin: 0;
+    line-height: 100%;
+    text-transform: uppercase; }
+  .logo__link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1.2rem; }
+
+.btn--menu {
+  background: #EAB500; }
+
+.navigation {
+  background: black;
+  padding: 30px; }
+
+.menu-item.current_page_item a {
+  color: #E9622C; }
+.menu-item a {
+  color: white; }
+
+.share_links__item {
+  color: white; }
+
+.link-list__title {
+  color: #333333; }
+.link-list__item {
+  color: white; }
+  .link-list__item__link {
+    color: white; }
+.link-list--reverse__title {
+  color: white; }
+.link-list--reverse__item__link {
+  color: #828282; }
+
+#navigation:target {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0); }
+
+#map-canvas {
+  height: 1500px;
+  margin: 0;
+  padding: 0; }
+  #map-canvas img {
+    max-width: none; }
+
+.listing {
+  margin: 1.875rem auto; }
+  .listing__item {
+    list-style: none; }
+    .listing__item__header {
+      padding: 0.625rem; }
+    .listing__item__meta--con {
+      background: blue; }
+    .listing__item__meta--lib-dem {
+      background: yellow; }
+    .listing__item__meta--lab {
+      background: red; }
+    .listing__item__meta--green {
+      background: green; }
+    .listing__item__meta--ukip {
+      background: purple; }
+
+#chart1 {
+  width: 600px !important;
+  height: 600px !important; }
+
+#turnoutChart {
+  width: 50px !important;
+  height: 200px !important; }
+
+.wardButton {
+  margin-bottom: 20px; }
+
+@media screen and (min-width: 40em) {
+  .listing {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+
+@media screen and (min-width: 60em) { }
