@@ -60,6 +60,7 @@ $('.wardButton').on('click', function() {
 		"success": function(data) {
 			// console.log('Data is '+data);
 			candidates = data;
+			$('#wardLabel').text($(this).text());
 			refresh(toData(candidates));
 			// console.log('refreshed');
 		},
@@ -73,7 +74,9 @@ $('.wardButton').on('click', function() {
 		"dataType":"json",
 		"success": function(data) {
 			console.log('success');
-			turnoutData.datasets[0].data[0] = data[0].turnout_percentage;
+			var percentage = data[0].turnout_percentage;
+			$('#turnoutLabel').text(percentage + '% turnout');
+			turnoutData.datasets[0].data[0] = percentage;
 			reloadTurnoutChart();
 			console.log('refreshed');
 		},

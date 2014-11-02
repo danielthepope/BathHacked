@@ -18,6 +18,12 @@
 	<button type="button" class="wardButton">Weston</button>
 	<button type="button" class="wardButton">Widcombe</button>
 </div>
+<div>
+	<h2 id="wardLabel"></h2>
 <canvas id="chart1" width="400" height="400"></canvas>
+</div>
+<div>
+	<h3 id="turnoutLabel"></h3>
 <canvas id="turnoutChart" width="75" height="200" style="background:#ddd;"></canvas>
+</div>
 </ul>
