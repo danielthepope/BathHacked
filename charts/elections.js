@@ -12,7 +12,9 @@ function toData(candidates) {
 		point = {};
 		point.value = candidates[i].votes;
 		point.color = getColor(candidates[i].party);
-		point.label = candidates[i].name;
+		point.label = '';
+		if (candidates[i].elected) point.label += "ELECTED: ";
+		point.label += candidates[i].name;
 		data.push(point);
 	}
 	return data;
