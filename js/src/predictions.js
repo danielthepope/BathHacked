@@ -62,6 +62,6 @@ var predictionData2 = [ {
  ];
 
 var predictionContext = document.getElementById("predictionChart").getContext("2d");
-var predictionChart = new Chart(predictionContext).PolarArea(predictionData1);
+var predictionChart = new Chart(predictionContext).PolarArea(toData(predictionData1));
 var idealContext = document.getElementById("idealChart").getContext("2d");
-var idealChart = new Chart(idealContext).PolarArea(predictionData2);
+var idealChart = new Chart(idealContext).PolarArea(toData(predictionData2));
